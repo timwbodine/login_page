@@ -1,12 +1,26 @@
 
 
 .logo-top-1
-   width: 8rem
-   height: 8rem
-   margin-right: 3rem
+
+   @include respond(iphone5-land)
+      width: 4rem
+      height: 4rem
+      margin-right: 4rem
+      
+   @include respond(iphone5-port)
+      margin-right: 3rem
+      width: 8rem
+      height: 8rem
 .logo-top-2
-   width: 14rem
-   height: 8rem
+
+   @include respond(iphone5-land)
+      width: 5.5rem
+      height: 3.5rem
+      margin: .5rem
+   @include respond(iphone5-port)
+      display: inline-block
+      width: 14rem
+      height: 8rem
 
 ////login box
 
@@ -77,19 +91,30 @@
 ////"footer" logo
 
 .logo-bottom
-   @include respond(iphone5-port)
+   @include respond(iphone5-land)
       position: fixed
+      bottom: 4rem
+      right: -2rem
+      height: 15rem
+      overflow: hidden
+      z-index: -1
+   @include respond(iphone5-port)
       bottom: 10rem
       right: -7rem
       height: 20rem
-      overflow: hidden
-      z-index: -1
 
 .logo-bottom-img
    display: block
    width: 25rem
    height: 30rem
    margin: 0 auto
+   @include respond(iphone5-land)
+      width: 17rem
+      height: 20rem
+
    @include respond(iphone5-port)
+      width: 25rem
+      height: 30rem
+      margin: 0 auto
       
    
