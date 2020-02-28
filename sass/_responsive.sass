@@ -1,0 +1,22 @@
+@mixin respond($breakpoint) 
+    @if $breakpoint == iphone5-port 
+        @media only screen and (max-width: 20.1em)  
+            @content     
+    
+    @if $breakpoint == iphone5-land 
+        @media only screen and (max-width: 35.6em)  
+            @content     
+    
+    @if $breakpoint == iphonex-port 
+        @media only screen and (max-width: 23.5em)  
+            @content     
+    
+    @if $breakpoint == iphonex-land 
+        @media only screen and (max-width: 51em)  
+            @content     
+    
+    @if $breakpoint == big-desktop 
+        @media only screen and (min-width: 112.5em)  
+            @content     
+    
+
