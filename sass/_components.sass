@@ -1,27 +1,18 @@
 
-.logo-top-1-img
-   width: 12rem
-
-      
 
 .logo-top-1
-   padding: 4rem
-   display: inline-block
-
+   width: 8rem
+   height: 8rem
+   margin-right: 3rem
 .logo-top-2
-   padding: 4rem
+   width: 14rem
+   height: 8rem
 
-
-.logo-top-2-img
-   opacity: 0
-
-       
 ////login box
 
 
 .login-box
-   height: 30rem
-   width: 27rem
+   
    display: flex
    flex-direction: column
    justify-content: center
@@ -84,16 +75,21 @@
 
 
 ////"footer" logo
+
+.logo-bottom
+   @include respond(iphone5-port)
+      position: fixed
+      bottom: 10rem
+      right: -7rem
+      height: 20rem
+      overflow: hidden
+      z-index: -1
+
 .logo-bottom-img
    display: block
    width: 25rem
    height: 30rem
    margin: 0 auto
    @include respond(iphone5-port)
+      
    
-
-.logo-bottom
-    height: 30rem
-    overflow: hidden
-    margin-bottom: 5rem
-        
